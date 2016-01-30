@@ -1,0 +1,16 @@
+<section class="container row center-xs">
+    {{#each model.categories as |category|}}
+        <section class="category col-xs-6">
+            <h2>{{category.name}}</h2>
+            <section class="hex-grid">
+                {{#each category.articles as |article|}}
+		            {{#hex-box class="small-grid"}}
+			            <a href="{{article.link}}">
+                            {{article.name}}
+			            </a>
+		            {{/hex-box}}
+                {{/each}}
+            </section>
+        </section>
+    {{/each}}
+</section>

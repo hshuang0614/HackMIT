@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Perspective</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {{content-for 'head'}}
+
+        <link rel="stylesheet" href="assets/vendor.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.2.0/flexboxgrid.min.css" type="text/css" >
+        <link rel="stylesheet" href="assets/perspective.css">
+
+        {{content-for 'head-footer'}}
+    </head>
+    <body>
+        <section class="page-wrap">
+            <main id="ember-content">
+                {{content-for 'body'}}
+            </main>
+        </section>
+        <footer>
+            <section class="row middle-xs center-xs sponsers">
+                <div class="col-xs">
+                    <img class="footer-image" src="http://i.imgur.com/8OBTz3z.png" />
+                </div>
+                <div class="col-xs">
+                    <img class="footer-image" src="http://i.imgur.com/N6RMAHo.png" />
+                </div>
+                <div class="col-xs">
+                    <img class="footer-image" src="assets/hack.svg" />
+                </div>
+                <div class="col-xs">
+                    <img class="footer-image" src="http://i.imgur.com/pZkr9IB.png" />
+                </div>
+                <div class="col-xs">
+                    <img class="footer-image" src="http://i.imgur.com/PwQ3Gze.png" />
+                </div>
+            </section>
+        </footer>
+
+        <script src="assets/vendor.js"></script>
+        <script src="assets/perspective.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+
+        {{content-for 'body-footer'}}
+    </body>
+</html>
